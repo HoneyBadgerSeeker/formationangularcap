@@ -4,4 +4,5 @@
     Welcome to {{title}}
   </h1>
 </div>
-<app-search>  </app-search><app-resultat></app-resultat>
+<app-search (Out)='select($event)'></app-search>
+<app-resultat [id]="selectedId"></app-resultat>

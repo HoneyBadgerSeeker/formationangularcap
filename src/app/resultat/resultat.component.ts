@@ -16,7 +16,7 @@ export class ResultatComponent implements OnInit {
 
   }
 
-  getWeatherInfo(id: string) {
+  getWeatherInfo() {
   }
 
 

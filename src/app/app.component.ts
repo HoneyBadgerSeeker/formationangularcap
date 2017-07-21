@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CapMeteo';
+  selectedId: string;
+
+  select(event) {
+    this.selectedId = event;
+  }
 }
+

@@ -1,9 +1,9 @@
-<form (ngSubmit) = 'search()'>
-  <md-select placeholder="choose city">
-    <md-option *ngFor="let city of cities" [value]="city.title">
+
+  <md-select placeholder="choose city" [(ngModel)]="selectedId">
+    <md-option *ngFor="let city of cities" [value]='city.title'>
       {{ city.title }}
     </md-option>
   </md-select> 
-  <button type='submit'>Rechercher</button>
-</form>
+  <button md-button (click)='search()'>Rechercher</button>
+
 
