@@ -17,8 +17,6 @@ export class ResultatComponent implements OnInit {
   }
 
   getWeatherInfo(id: string) {
-    this.http.get('https://www.metaweather.com/api/location/' + id)
-    .subscribe()
   }
 
 
